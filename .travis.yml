@@ -1,11 +1,25 @@
 language: ruby
 cache: bundler
-gemfile: docs/Gemfile
+
+install:
+  # Install Jekyll and dependencies
+  - bundle install
+
 script:
-  - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
+  - bundle exec rake site:deploy --quiet
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
     - gh-pages
 rvm:
- - 2.4
+ - 2.4.2
+
+# Generate your secure token with the travis gem:
+# get Github token from your Travis CI profile page
+# gem install travis
+# GH_TOKEN from https://github.com/settings/tokens
+# travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
+
+env:
+  global:
+    secure: "K/ox1U6MSBj9AHn35sTlRLixrmZxwbteN5agNMndjXx555pn2AwRtap5tYptB7C4iJGh+6sK09MKh9TSVEZ6cVlaudF5tLwEU+4uKcHlZgpiIGk/sHU2F3YWpsRYa59RHGoAbgzIL89d4fq45V/k9/5GXx5UNMB9uOWi/RbbtTdIIeCyRiX+GpmfnjIyTk3v8odnJKHvIBFw3Y0ojk1/ERCOkAdixHVahT7Up8UQuRzCDnXrDExT3fW4Z6gDosAVqIEM38xiq2rBl915CgStncNni5D3HavYP22dw1sKfAZ+pABM0ReJSEMJIIm2d0hZniAkOOK6FYtjF7I5fLpZKx3/EbdZrnzsBE0UyG4wR7tuOwYsNCq6kNzInBQmRybwkouv11RIZzEEmS4VASj7QmZ2EBZ7bkqIQh+qWAdcRbkQslOZhZsev3TLlK//a3LpJa4wUsNXR1yHL7V3nspGKa2pZE9OKB2OaKEPZgNGejmdldmJAuPo0cOdfDJOLhxnpVRXq729SdNtwWBdhJcZMtEZ2g5yLsyXLmRe19YAgy+qfhHfbTdoGcmXfKvUEEvYSKxCxpGzwnUV700dKvcgrGxOzolVMEYuOytczzP+A+oZqmCAuHAnWjuaNh1czPO6pkQ6YgQ+o6PhN61Kwno/0wpMStVsiuAAU2jFHrbIkPk="
