@@ -318,5 +318,5 @@ repo: esmoney.github.io #Github repo
 branch: master
 relative_source: ../esmoney.github.io/
 destination: ../posts
-production_url:  https://esmoney.com # https://[username].github.io/[repo] or Your Custom URL
+production_url:  https://esmoney.github.io # https://[username].github.io/[repo] or Your Custom URL
 source_url:  https://github.com/esmoney/esmoney.github.io/ # Github repo URL
