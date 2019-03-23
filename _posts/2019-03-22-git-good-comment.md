@@ -53,4 +53,4 @@ DOC: UI 변경에 따른 메뉴얼 업데이트
 ---
 # References
 * [http://story.haezoom.com/?p=936 : 해줌님 블로그](http://story.haezoom.com/?p=936)
-* https://item4.github.io/2016-11-01/How-to-Write-a-Git-Commit-Message/
+* [https://item4.github.io/2016-11-01/How-to-Write-a-Git-Commit-Message/](https://item4.github.io/2016-11-01/How-to-Write-a-Git-Commit-Message/)
