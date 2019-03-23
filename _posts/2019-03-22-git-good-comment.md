@@ -3,6 +3,8 @@ title: "좋은 커밋 메시지"
 categories: 
   - blogging
 last_modified_at: 2019-03-23 16:27:00
+toc: true
+search: true
 comments: true
 ---
 
