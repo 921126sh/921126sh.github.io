@@ -2,10 +2,15 @@
 title: "좋은 커밋 메시지"
 categories: 
   - blogging
+tags: 
+  - jekyll
 last_modified_at: 2019-03-23 16:27:00
 toc: true
 search: true
 comments: true
+changefreq : daily
+priority : 1.0
+toc_sticky: true
 ---
 
 # 들어가며
