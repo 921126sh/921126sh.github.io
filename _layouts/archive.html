@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -24,3 +25,9 @@ layout: default
     {{ content }}
   </div>
 </div>
+
+{% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus.html %}
+</div>
+{% endif %}
