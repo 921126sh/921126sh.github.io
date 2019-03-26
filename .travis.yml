@@ -6,7 +6,8 @@ install:
   - bundle install
 
 script:
-  - bundle exec rake site:deploy --quiet
+  #- bundle exec rake site:deploy --quiet
+  - bundle exec jekyll algolia push
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
