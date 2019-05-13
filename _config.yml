@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "SeongHyun Kim"
   avatar           : "/assets/images/sh.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "기록은 기억을 지배한다."
+  bio              : "작성하자 기록하자."
   location         : "Seoul, Korea"
   email            :
   links:
